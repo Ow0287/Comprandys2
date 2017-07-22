@@ -53,6 +53,7 @@
         app:srcCompat="@drawable/ic_menu_camera" />
 
     <ImageView
+        android:id="@+id/imgV"
         android:layout_width="200dp"
         android:layout_height="130dp"
         android:layout_centerHorizontal="true"
