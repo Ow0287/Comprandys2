@@ -3,8 +3,6 @@ package com.example.senasoft.comprandys2.controlador;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Bitmap;
-import android.view.View;
 import android.widget.Toast;
 
 import com.example.senasoft.comprandys2.modelo.BaseProducto;
@@ -57,7 +55,7 @@ public class ControladorProducto {
 
 
             do {
-                 pro = new Producto(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3));
+                 pro = new Producto(cursor.getString(0), cursor.getString(3), cursor.getString(1), cursor.getString(2));
 
             } while (cursor.moveToNext());
 
@@ -82,7 +80,7 @@ public class ControladorProducto {
 
 
             do {
-                Producto pro = new Producto(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3));
+                Producto pro = new Producto(cursor.getString(0), cursor.getString(2), cursor.getString(1), cursor.getString(3));
                 lista.add(pro);
             } while (cursor.moveToNext());
 

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.example.senasoft.comprandys2.R;
 import com.example.senasoft.comprandys2.modelo.Producto;
 
-import java.util.Base64;
+
 import java.util.List;
 
 /**
