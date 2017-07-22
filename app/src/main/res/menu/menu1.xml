@@ -5,5 +5,11 @@
         android:id="@+id/menu_ver_todo"
         android:title="@string/txt_ver_todo"
         app:showAsAction="ifRoom"
-        android:icon="@android:drawable/ic_menu_search"/>
+        android:icon="@mipmap/ver"/>
+    <item
+        android:id="@+id/mapa_satelite"
+        android:title="@string/txt_mapa_satelite" />
+    <item
+        android:id="@+id/mapa"
+        android:title="@string/txt_mapa" />
 </menu>
