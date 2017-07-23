@@ -69,5 +69,6 @@
         android:layout_marginTop="430dp"
         android:onClick="registrarProdu"
         android:text="Registrarse"
-        android:textColor="@color/color" />
+        android:textColor="@color/color"
+        android:background="@drawable/selector_botones"/>
 </RelativeLayout>
