@@ -10,6 +10,10 @@
             android:id="@+id/nav_gallery"
             android:icon="@mipmap/salir"
             android:title="Salir" />
+        <item
+            android:id="@+id/nav_listado"
+            android:icon="@mipmap/listado"
+            android:title="Ver listado" />
 
     </group>
 
