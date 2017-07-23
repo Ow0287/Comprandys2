@@ -44,7 +44,7 @@ public class Producto {
         this.foto = foto;
     }
 
-    public Producto(String nombreP, String foto, String cantidadD, void precio) {
+    public Producto(String nombreP, String cantidadD, String precio, String foto) {
 
         this.nombreP = nombreP;
         this.cantidadD = cantidadD;
