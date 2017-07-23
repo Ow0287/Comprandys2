@@ -64,6 +64,7 @@ public class AdapterProducto extends BaseAdapter {
 
         byte[] fot= android.util.Base64.decode(this.list.get(i).getFoto(), android.util.Base64.DEFAULT);
         Bitmap bitmap= BitmapFactory.decodeByteArray(fot,0,fot.length);
+
         imageView.setImageBitmap(bitmap);
         nombre.setText(this.list.get(i).getNombreP());
         cantidad.setText(this.list.get(i).getCantidadD());

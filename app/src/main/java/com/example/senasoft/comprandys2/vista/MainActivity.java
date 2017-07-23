@@ -76,17 +76,16 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        if (id == R.id.registro) {
+            Intent intent=new Intent(MainActivity.this,Registro.class);
+            startActivity(intent);
+            finish();
+        } else if (id == R.id.ver) {
+            Intent intent=new Intent(MainActivity.this,Lista.class);
+            startActivity(intent);
+            finish();
+        } else if (id == R.id.salir) {
+            finish();
 
         }
 
@@ -94,36 +93,5 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-    public void vistaRegistro(View v){
-        Intent intent=new Intent(MainActivity.this,Registro.class);
-        startActivity(intent);
-        finish();
 
-    }
-    public void vistaGaleria(View v){
-        Intent intent=new Intent(MainActivity.this,Lista.class);
-        startActivity(intent);
-        finish();
-
-    }
-    public void vistaSlideshow(View v){
-
-
-    }
-
-    public void vistaTool(View v){
-
-
-    }
-
-    public void vistaComunicate(View v){
-
-
-    }
-
-    public void salir(View v){
-        finish();
-
-
-    }
 }
