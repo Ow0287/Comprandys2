@@ -66,5 +66,7 @@
         android:text="Registrarse"
         android:layout_marginTop="430dp"
         android:layout_marginLeft="200dp"
-        android:textColor="@color/color" />
+        android:textColor="@color/cardview_light_background"
+        android:background="@drawable/selector_botones"
+        android:textStyle="bold"/>
 </RelativeLayout>
