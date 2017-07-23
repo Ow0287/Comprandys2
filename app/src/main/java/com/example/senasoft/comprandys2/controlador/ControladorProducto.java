@@ -23,6 +23,8 @@ public class ControladorProducto {
 
     public ControladorProducto(Context context) {
         this.context = context;
+        base=new BaseProducto(context,"registro",null,1);
+        sqLiteDatabase=base.getWritableDatabase();
     }
     public void eliminarProducto(String nombreP){
         String eliminar="delete from productos where nombreP= '"+nombreP+"'   ";
@@ -70,11 +72,11 @@ public class ControladorProducto {
     public List<Producto> verTodosProducto() {
         List<Producto> lista;
         lista = new ArrayList<>();
-        Cursor cursor;
+        Cursor cursor=null;
 
         String verToProd = "select * from productos   ";
         cursor = sqLiteDatabase.rawQuery(verToProd, null);
-        sqLiteDatabase.close();
+
 
         if (cursor.moveToFirst()) {
 
@@ -87,8 +89,8 @@ public class ControladorProducto {
 
         }
 
-
-return lista;
+        sqLiteDatabase.close();
+            return lista;
     }
 
 }

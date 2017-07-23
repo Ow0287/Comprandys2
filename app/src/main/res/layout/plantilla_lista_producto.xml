@@ -3,14 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<android.support.v7.widget.CardView
-    android:layout_width="360dp"
-    android:layout_height="wrap_content"
-    app:cardCornerRadius="15dp"
-    app:cardBackgroundColor="@color/tarjeta_color"
-    android:layout_marginTop="20dp"
-    android:layout_centerHorizontal="true">
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background">
+
 <ImageView
     android:id="@+id/img_foto"
     android:layout_width="130dp"
@@ -45,5 +40,4 @@
         android:textColor="@color/color_img"
         android:textSize="@dimen/tamaño_letra_nombre"
         android:textStyle="bold"/>
-</android.support.v7.widget.CardView>
 </RelativeLayout>
