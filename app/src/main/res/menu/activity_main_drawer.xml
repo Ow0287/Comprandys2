@@ -12,7 +12,7 @@
             android:title="Salir" />
         <item
             android:id="@+id/nav_listado"
-            android:icon="@mipmap/listado"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
             android:title="Ver listado" />
 
     </group>
