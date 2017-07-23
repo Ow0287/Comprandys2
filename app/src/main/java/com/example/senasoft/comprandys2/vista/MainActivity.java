@@ -1,5 +1,6 @@
 package com.example.senasoft.comprandys2.vista;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -92,5 +93,37 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void vistaRegistro(View v){
+        Intent intent=new Intent(MainActivity.this,Registro.class);
+        startActivity(intent);
+        finish();
+
+    }
+    public void vistaGaleria(View v){
+        Intent intent=new Intent(MainActivity.this,Lista.class);
+        startActivity(intent);
+        finish();
+
+    }
+    public void vistaSlideshow(View v){
+
+
+    }
+
+    public void vistaTool(View v){
+
+
+    }
+
+    public void vistaComunicate(View v){
+
+
+    }
+
+    public void salir(View v){
+        finish();
+
+
     }
 }
