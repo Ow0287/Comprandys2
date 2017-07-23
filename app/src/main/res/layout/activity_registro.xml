@@ -60,6 +60,7 @@
         android:layout_marginTop="280dp"
         app:srcCompat="@mipmap/ic_logo" />
     <Button
+        android:id="@+id/btn_registrarse"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:text="Registrarse"
